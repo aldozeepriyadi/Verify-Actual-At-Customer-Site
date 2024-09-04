@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Redirect to login.php if accessing the root
+RewriteCond %{REQUEST_URI} ^/VerifyActualAtCustomerSiteComplete/?$ [OR]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /VerifyActualAtCustomerSiteComplete/login.php [L]
